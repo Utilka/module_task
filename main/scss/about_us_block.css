@@ -1,0 +1,81 @@
+@font-face {
+  font-family: PrimaryFont;
+  src: url(../fonts/bravo.otf); }
+@font-face {
+  font-family: SecondaryFont;
+  src: url(../fonts/Candara.ttf); }
+.link {
+  text-decoration: none;
+  color: #bdbdbd;
+  position: relative; }
+  .link:link {
+    text-decoration: none; }
+  .link:visited {
+    color: #767676;
+    text-decoration: none; }
+  .link:hover {
+    background-color: #A8A7A8;
+    color: #cc527A;
+    text-decoration: none; }
+  .link:active {
+    color: #2b2b2b;
+    text-decoration: none; }
+
+html,
+body {
+  height: 100%;
+  margin: 0; }
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  line-height: 1;
+  font-family: PrimaryFont;
+  color: #A8A7A8;
+  background-color: #474747; }
+  body .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #A8A7A8;
+    flex: 1; }
+    body .wrapper .welcome {
+      margin: 0 auto;
+      padding: 2vw;
+      font-size: 3rem;
+      font-variant: small-caps; }
+  body .footer {
+    font-family: SecondaryFont;
+    padding: 3vw;
+    background-color: #474747;
+    color: #A8A7A8;
+    text-align: center; }
+
+@media screen and (max-width: 959px) {
+  body .wrapper {
+    width: 100%; } }
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+  body .wrapper {
+    width: 85%; } }
+@media screen and (min-width: 1200px) {
+  body .wrapper {
+    width: 70%; } }
+.about-us {
+  background-color: #363636;
+  padding: 30px;
+  line-height: 1.2; }
+  .about-us h2,
+  .about-us h3 {
+    font-family: PrimaryFont;
+    color: #e8175D;
+    font-size: 4.5rem; }
+  .about-us h3 {
+    font-size: 3rem; }
+  .about-us p {
+    font-family: SecondaryFont;
+    color: #A8A7A8;
+    font-size: 1.3rem; }
+
+/*# sourceMappingURL=about_us_block.css.map */

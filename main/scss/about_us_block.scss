@@ -1,0 +1,21 @@
+@import './main_sheet.scss';
+.about-us {
+    background-color: $color2;
+    padding: 30px;
+    line-height: 1.2;
+    // letter-spacing: 1px;
+    h2,
+    h3 {
+        font-family: PrimaryFont;
+        color: $color4;
+        font-size: 4.5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
+    p {
+        font-family: SecondaryFont;
+        color: $color1;
+        font-size: 1.3rem;
+    }
+}

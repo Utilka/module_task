@@ -1,0 +1,104 @@
+@import './main_sheet.scss';
+.header {
+    background-color: $color2;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            display: block;
+            background-image: url(../img/pony_logo.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 190px;
+            height: 58px;
+            margin-left: 10px;
+        }
+        .show-menu {
+            display: none;
+        }
+    }
+    .nav {
+        background-color: $color2;
+        display: flex;
+        height: auto;
+        flex-wrap: nowrap;
+        z-index: 100;
+        .nav__link-container {
+            display: flex;
+            height: auto;
+            .nav__link {
+                width: 100%;
+                color: lighten($color: $color5, $amount: 30);
+                font-size: 1.5rem;
+                padding: 20px 29px 24px 29px;
+                text-transform: uppercase;
+                &:link {
+                    text-decoration: none;
+                }
+                &:visited {
+                    text-decoration: none;
+                }
+                &:hover {
+                    background-color: $color5;
+                    color: $color1;
+                    text-decoration: none;
+                }
+                &:active {
+                    color: $color2;
+                    text-decoration: none;
+                }
+            }
+        }
+        #show-nav {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 639px) {
+    // from here hide nav
+    .header {
+        position: relative;
+        flex-direction: column;
+        .nav {
+            top: 68px;
+            width: 100%;
+            position: absolute;
+            display: none;
+            height: auto;
+            flex-direction: column;
+        }
+        #show-nav {
+            content: "";
+            display: block;
+            width: 58px;
+            height: 58px;
+            margin: 5px;
+            background: url('../img/menu_white.png') no-repeat;
+            background-size: cover;
+            transition: transform .2s ease-in-out;
+            -webkit-transition: transform .2s ease-in-out;
+            -moz-transition: transform .2s ease-in-out;
+            -ms-transition: transform .2s ease-in-out;
+            -o-transition: transform .2s ease-in-out;
+            transform: none;
+            -webkit-transform: none;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+        }
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .header {
+        flex-direction: row;
+        .nav {
+            display: flex!important;
+        }
+    }
+}
